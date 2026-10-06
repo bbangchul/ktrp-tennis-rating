@@ -1,3 +1,4 @@
+import { SITE_URL } from "./share-link.js";
 import { CONFIG } from "../data/config.js";
 import { SKILL_QUESTIONS, getQuestionPosition } from "../data/questions.js";
 import { stages, skills } from "./labels.js";
@@ -26,6 +27,12 @@ export function resultHtml(r) {
         <button id="shareImage" type="button" hidden>공유 · 이미지 저장</button>
         <a id="downloadImage" class="download-button">PNG 다운로드</a>
       </div>
+    </section>
+    <section class="link-share" aria-label="사이트 링크 공유">
+      <button id="shareLink" type="button" class="secondary">사이트 링크 공유하기</button>
+      <p>친구도 자신의 KTRP를 측정할 수 있어요.</p>
+      <p id="linkShareStatus" role="status" aria-live="polite"></p>
+      <a id="shareLinkFallback" href="${SITE_URL}" hidden>${SITE_URL}</a>
     </section>
     <div class="metrics">
     <div class="metric">

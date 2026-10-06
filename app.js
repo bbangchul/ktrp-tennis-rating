@@ -1,3 +1,4 @@
+import { bindLinkShare } from "./ui/share-link.js";
 import { bindImageExport } from "./ui/export-image.js";
 import { resultHtml } from "./ui/results.js";
 import { titles, stages } from "./ui/labels.js";
@@ -197,7 +198,10 @@ function render() {
     ])}${select("fitness", "현재 체력운동 빈도", frequencies)}</div><div class="grid">${select("tennis", "테니스 활동 빈도", frequencies)}${select("games", "실제 게임 빈도", frequencies)}</div>${number("gap", "테니스를 연속으로 쉰 최장 기간 (년)", 0, 80)}<div class="note">운동배경과 활동량 전체 보정은 −0.30~+0.50으로 제한됩니다. 선수 은퇴 후에도 테니스를 쳤다면 은퇴기간을 공백으로 입력하지 마세요.</div>`;
   if (step === 4) html = resultHtml(result);
   $("#content").innerHTML = html;
-  if (step === 4) disposeImageExport = bindImageExport(result);
+  if (step === 4) {
+    disposeImageExport = bindImageExport(result);
+    bindLinkShare();
+  }
   $("#back").textContent = step === 4 ? "답변 수정" : "이전";
 }
 $("#form").addEventListener("change", (e) => {

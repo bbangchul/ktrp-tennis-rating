@@ -559,3 +559,10 @@ th {
   .progress-label { gap: 12px; line-height: 1.5; }
   #progressText { text-align: right; }
 }
+
+
+.link-share { margin: 16px 0 24px; text-align: center; }
+.link-share button { width: 100%; min-height: 52px; }
+.link-share p { font-size: 13px; line-height: 1.6; color: #65786f; margin: 10px 0; }
+.link-share a { display: block; overflow-wrap: anywhere; color: #094235; padding: 12px; background: white; border-radius: 10px; }
+#linkShareStatus:empty { display: none; }
