@@ -67,9 +67,6 @@ export async function createResultImage(result) {
     text('선수경력·구력 및 자기평가 설문 기반', 96, y + 66, 30, '#adc8b8');
     text('경기 기록이 쌓이면 더 정확해집니다.', 96, y + 120, 30, '#adc8b8');
   }
-  text('자가 입력 결과이며 대회 기록은 미인증입니다.', 96, 2060, 27, '#adc8b8');
-  text('남녀·대회 부서 간 같은 점수가 같은 실력을', 96, 2106, 27, '#adc8b8');
-  text('뜻하지는 않습니다. 공식 NTRP 인증이 아닙니다.', 96, 2152, 27, '#adc8b8');
   text('KNOW YOUR GAME. KEEP PLAYING.', 96, 2270, 25, '#d6f36a', 700);
   text(`KTRP ${result.algorithmVersion} · 7.5+ 척도`, 96, 2316, 23, '#adc8b8');
   const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
