@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>KTRP · 나의 테니스 레벨</title>
+    <meta
+      name="description"
+      content="대회 실적, 수행능력과 운동 배경으로 알아보는 한국형 초기 테니스 레이팅"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23094235'/%3E%3Ctext x='7' y='24' fill='%23d6f36a' font-size='24' font-family='Arial' font-weight='bold'%3EK%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+
+  <body>
+    <header>
+      <a class="brand" href="./">KTRP<span>KOREA TENNIS RATING PROGRAM</span></a
+      ><span class="tag">INITIAL RATING · 7.5+</span>
+    </header>
+    <main>
+      <aside>
+        <div class="eyebrow">KNOW YOUR GAME</div>
+        <h1>지금의 나를,<br />코트 위의 숫자로.</h1>
+        <p>
+          대회 기록과 현재의 경기력을 바탕으로<br />나의 첫 KTRP를 알아보세요.
+        </p>
+        <ol id="steps"></ol>
+        <div class="aside-note">
+          한국 동호인 기준 · 약 5분<br />모든 설문 결과는 잠정 등급(P)입니다.
+        </div>
+      </aside>
+      <section class="workspace">
+        <div class="progress-label">
+          <span id="stepLabel"></span><span id="progressText"></span>
+        </div>
+        <progress id="progress" max="4" value="1"></progress>
+        <form id="form">
+          <div id="content"></div>
+          <p id="error" role="alert"></p>
+          <nav>
+            <button type="button" id="back" class="secondary">이전</button
+            ><button id="next" type="submit">다음 단계</button>
+          </nav>
+        </form>
+        <footer>
+          실제 경기 기록이 쌓이면 더 정확해집니다.<br />KTRP는 자체 설계
+          기준이며 공식 NTRP 인증을 대신하지 않습니다.
+        </footer>
+      </section>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
