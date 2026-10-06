@@ -156,5 +156,9 @@ export function resultHtml(r) {
     )}
     </table>
     <p class="intro">현재는 설문 결과만 산출합니다. 향후 상대 KTRP와 스코어가 포함된 인증 경기로 업데이트할 수 있도록 데이터 구조를 준비했습니다. 아직 인증 경기 등록과 갱신 기능은 제공하지 않습니다.</p>
-    </details>`;
+    </details>
+    <section class="next-test" aria-label="테니스 복식 유형 테스트">
+      <p>나의 레벨을 알았다면, 복식 스타일도 알아볼까요?</p>
+      <a href="https://bbangchul.github.io/Tennis-Type-Test-/" target="_blank" rel="noopener noreferrer">테니스 복식 유형 테스트하러 가기 <span aria-hidden="true">↗</span></a>
+    </section>`;
 }
